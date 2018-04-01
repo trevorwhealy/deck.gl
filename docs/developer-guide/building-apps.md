@@ -1,4 +1,4 @@
-# Building deck.gl
+# Building Apps
 
 This article contains additional information on options for how to build deck.gl.
 

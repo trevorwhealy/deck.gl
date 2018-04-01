@@ -36,7 +36,7 @@ function checkMapboxToken() {
 
 function verifyUserInput() {
   const prompts = readline.createInterface(process.stdin, process.stdout);
-  prompts.question('Is the token correct? y/n \r\n', answer => {
+  prompts.question('Is the token correct? y/n (Do NOT publish your internal tokens!) \r\n', answer => {
     if (answer === 'y' || answer === 'Y') {
       process.exit(0);
     } else {
