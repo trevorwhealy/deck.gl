@@ -34,13 +34,39 @@ Release date: TBD, target April, 2018
 </table>
 
 
+## Non-React (Pure JavaScript) API
+
+v5.2 officially launches the "Pure JavaScript" (i.e. non-React) deck.gl API. This allows deck.gl apps to be written with (or without) any JavaScript UI frameworks. The API is official and supported but is not yet extensively tested so we consider it a "pre release"
+
+
+## Scripting Support
+
+deck.gl now publishes a bundle that can be imported using a `<script>` statement in HTML to give access to the full deck.gl JavaScript API. This makes deck.gl easy to use in e.g. "codepens" and for casual programming/visualization.
+
+
+## Multiple Modules
+
+deck.gl is now published as multiple module allowing applications to choose which features to import.
+
+
 ## Multi-Viewport Support
 
 deck.gl allows you to divide your screen into multiple viewports and render layers from different perspectives, using the `views` property. It is e.g. possible to render a top-down map view next to a first person view and allow your users to "walk around" in the city onto which your data is overlaid.
 
+
 ### View Classes
 
 A new hierarchy of `View` classes let apps provide multiple views of their data.
+
+
+## MapController
+
+It is now possible to specify a `MapController` as a `controller` for the `Deck` or `DeckGL` classes, instead of relying on e.g. `react-map-gl` or experimental classes to drive event handling.
+
+
+## Automatic Size Handling
+
+It is no longer necessary for applications to specify the exact `width` and `height` of the `Deck` or `DeckGL` components. Size can either be left out and controlled by external components (such as HTML flex boxes) or specified using CSS descriptors (e.g. `width = 100%`).
 
 
 ## Layers
